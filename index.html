@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/gird.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="ChatAI_HPfurniture"
+      agent-id="ad331fd8-446b-4bf2-be4a-294f218bf494"
+      language-code="vi"
+    ></df-messenger>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="col-12 hide__on--tablet__mobile" style="height: 55px;">
+            <div class="header">
+                <div class="header-nav__one">
+                    <div class="nav-VNEN">
+                        <span>
+                            <img src="https://nhaxinh.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.png" alt="Tiếng Việt">
+                            <span style="color: grey;">VN</span> EN
+                        </span>
+                    </div>
+                    <div class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="#" class="item-link item-link__call">
+                                    <i class="fa-solid fa-phone item-link__call--icon"></i>
+                                    1800 7200
+                                </a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#" class="item-link">
+            
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#" class="item-link">
+            
+                                    Khuyến mãi
+                                </a>
+                            </li>
+                            <li class="nav-list__item">
+                                <span href="#" class="item-link item-link__sale">
+            
+                                    Giảm giá đặc biệt
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <i class="fa-solid fa-location-arrow header__navbar-item-icon"></i>
+                    </li>
+                    <li class="header__navbar-item">
+                        <i class="fa-solid fa-heart header__navbar-item-icon"></i>
+                    </li>
+                    <li class="header__navbar-item">
+                        <i class="fa-solid fa-cart-shopping header__navbar-item-icon"></i>
+                        <div class="header__navbar-item--sl">1</div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">Đăng nhập</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="col-2" style="height: 70px;">
+                <div class="bag">
+                    <!-- Navbar -->
+                    <label for="nav__input-checkbox" class="nav__bars-btn">
+                        <i class="fa-solid fa-bars bag-category"></i>
+                    </label>
+                   
+                    <input type="checkbox" hidden name="" class="nav__input" id="nav__input-checkbox">
+
+                    <label for="nav__input-checkbox" class="nav__overlay"></label>
+
+                    <!-- Menu -->
+                    <nav class="nav__bag">
+                        <div style="padding: 5px;"></div>
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <span class="sBtn-text">SẢN PHẨM</span>
+                                <i class="fa-solid fa-chevron-down bx bx-chevron-down"></i>
+                            </div>
+                            <ul class="options">
+                                <li class="option">
+                                    <a href="#" class="option-text">Sofa</a>
+                                </li>
+                                <li class="option">
+                                    <a href="#" class="option-text">Bàn</a>
+                                </li>
+                                <li class="option">
+                                    <a href="#" class="option-text">Ghế</a>
+                                </li>
+                                <li class="option">
+                                    <a href="#" class="option-text">Giường ngủ</a>
+                                </li>
+                                <li class="option">
+                                    <a href="#" class="option-text">Tủ và kệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Menu2 -->
+                        <div style="padding: 2px;"></div>
+                        <div class="select-menu">
+                            <div class="select-btn">
+                                <span class="sBtn-text">PHÒNG</span>
+                                <i class="fa-solid fa-chevron-down bx bx-chevron-down"></i>
+                            </div>
+                            <ul class="options">
+                                <li class="option">
+                                    <a href="#" class="option-text">Phòng khách</a>
+                                </li>
+                                <li class="option">
+                                    <a href="#" class="option-text">Phòng ăn</a>
+                                </li>
+                                <li class="option">
+                                    <a href="#" class="option-text">Phòng ngủ</a>
+                                </li>
+                                <li class="option">
+                                    <a href="#" class="option-text">Phòng làm việc</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a href="~/SanPhamSofa/Index" class="nav__link">SOFA</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">BÀN</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">GHẾ</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a href="#" class="nav__link">GIƯỜNG NGỦ</a>
+                            </li>
+                        </ul>
+
+                        <div class="nav__login">
+                            <a href="https://chat.openai.com/c/f88ebe54-106f-431d-b8e4-a9654654697e">ĐĂNG NHẬP</a>
+                        </div>
+                    </nav>
+                    <!-- End Menu -->
+                    <!-- LOGO -->
+                    <a href="#" class="logo">
+                        <img src="./assets/img/logo.jpg" alt="Nội thất HP" class="logo__img">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="col-7" style="height: 70px;">
+                <div class="header-navbar hide__on--tablet__mobile">
+                    <ul class="navbar-list">
+                        <li class="navbar-list__item">
+                            <a href="" class="navbar-list__link">
+                                <div class="dropdown">
+                                    <div class="dropdown__select">
+                                        <span class="dropdown__selected">Sản phẩm</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Sofa 
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Bàn
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Ghế
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Giường ngủ
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Tủ và kệ
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Bếp
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="" class="navbar-list__link">
+                               <div class="dropdown">
+                                    <div class="dropdown__select">
+                                        <span class="dropdown__selected">Phòng</span>
+                                        <i class="fa-solid fa-angle-down"></i>  
+                                    </div>
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Phòng khách
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Phòng ăn
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Phòng ngủ
+                                            </span>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <span class="dropdown__text">
+                                                Phòng làm việc
+                                            </span>
+                                        </li>
+                                    </ul>
+                               </div>         
+                            </a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="" class="navbar-list__link">
+                                Bộ sưu tập
+                            </a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="" class="navbar-list__link">
+                                Thiết kế nội thất
+                            </a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="" class="navbar-list__link">
+                                Cửa hàng 360 độ
+                            </a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="" class="navbar-list__link">
+                                Góc cảm hứng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Search Tablet -->
+                <div class="header__search--tablet">
+                    <form>
+                        <!-- Điều chỉnh action và method -->
+                        <input type="text" name="key" class="header__search--tablet__input" placeholder="Nhập...">
+                        <input type="submit" value="Tìm" class="header__search--tablet__submit">
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-3 flex__on--tablet" style="height: 70px;">
+                <div class="header-search hide__on--tablet">
+                    <form name="timkiem">
+                        <input type="text" name="searchkey" class="header-search__input" placeholder="Nhập...">
+                        <input type="submit" name="submit" value="Tìm kiếm" class="header-search__submit">
+                    </form>
+                </div>
+
+                <!-- Yêu thích - Giỏ hàng - ĐN -->
+                <div class="header__tablet--bag">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+    </header>
+    <div class="col-12 hide__on--tablet" style="height: 117px;"></div>
+    <div class="padding__on--tablet"></div>
+        <!-- End Header -->
+
+        <!-- Img big hover -->
+        <div class="col-12" style="height: 700px;">
+            <div class="warpper">
+                <div class="img__big-hover">
+                    <div class="img__big-hover-item">
+                        <a href="#" class="img__big-hover-link">
+                            <img class="img__big-hover-image" src="./assets/img/slider1.jpg" alt="">
+                            <div class="img__big-hover-text">HP furniture</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12" style="height: 35px;"></div>
+
+        <!-- Img fit hover -->
+        <div class="col-6" style="height: 580px;">
+            <div class="warpper__one">
+                <div class="img__fit-hover">
+                    <div class="img__fit-hover-item">
+                        <a href="#" class="img__fit-hover-link">
+                            <img class="img__fit-hover-image" src="./assets/img/sofa1.jpg" alt="">
+                            <div class="img__fit-hover-text">SOFA</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Img small hover -->
+        <div class="col-6" style="height: 580px;">
+            <div class="col-6" style="height: 285px;">
+                <div class="warpper__two">
+                    <div class="img__small-hover">
+                        <div class="img__small-hover-item">
+                            <a href="#" class="img__small-hover-link">
+                                <img class="img__small-hover-image" src="./assets/img/phongan.jpg" alt="">
+                                <div class="img__small-hover-text">BÀN ĂN</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" style="height: 285px;">
+                <div class="warpper__two">
+                    <div class="img__small-hover">
+                        <div class="img__small-hover-item">
+                            <a href="#" class="img__small-hover-link">
+                                <img class="img__small-hover-image" src="./assets/img/giuong1.jpg" alt="">
+                                <div class="img__small-hover-text">GIƯỜNG</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" style="height: 285px;">
+                <div class="warpper__two">
+                    <div class="img__small-hover">
+                        <div class="img__small-hover-item">
+                            <a href="#" class="img__small-hover-link">
+                                <img class="img__small-hover-image" src="./assets/img/armchair1.jpg" alt="">
+                                <div class="img__small-hover-text">ARMCHAIR</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" style="height: 285px;">
+                <div class="warpper__two">
+                    <div class="img__small-hover">
+                        <div class="img__small-hover-item">
+                            <a href="#" class="img__small-hover-link">
+                                <img class="img__small-hover-image" src="./assets/img/ghean.jpg" alt="">
+                                <div class="img__small-hover-text">BÀN ĂN</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- add -->
+        <div class="col-12 hide__on--tablet__mobile" style="height: 50px;">
+            <div class="search__add">
+                <input class="search__add--input" type="text" placeholder="Nhập...">
+                <button class="search__add--btn">
+                    TÌM KIẾM
+                </button>
+            </div>
+        </div>
+        <div class="col-6 hide__on--tablet__mobile" style="height: 500px;">
+            <div class="discount">
+                <img src="./assets/img/ggdb_0.jpeg" alt="" class="discount__img">
+            </div>
+        </div>
+        <div class="col-2 hide__on--tablet__mobile" style="height: 500px;">
+            <div class="discount__box">
+                <div class="discount__title--one">
+                    <h2 class="discount__h2">Mẫu thiết kế phòng khách</h2>
+                    <p class="discount__p">Phòng khách là không gian chính của ngôi nhà, là nơi sum họp gia đình</p>
+                    <a href="#" class="discount__flex">
+                        <span class="discount__span">MẪU PHÒNG KHÁCH</span>
+                        <i class="fa-solid fa-arrow-right-long discount__icon"></i>
+                    </a>
+                </div>
+    
+                <div class="discount__title--two">
+                    <h2 class="discount__h2">Đồ trang trí</h2>
+                    <p class="discount__p">Mang lại những nguồn cảm hứng và nét sinh động cho không gian</p>
+                    <a href="#" class="discount__flex">
+                        <span class="discount__span">KHÁM PHÁ</span>
+                        <i class="fa-solid fa-arrow-right-long discount__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 hide__on--tablet__mobile" style="height: 500px;">
+            <img src="./assets/img/ggdb_1.jpg" alt="" class="discount__img">
+        </div>
+
+        <div class="col-12" style="height: 70px;"></div>
+
+        <div class="col-6 flex__discount hide__on--tablet__mobile" style="height:500px;">
+            <div class="flex__discount--dis">
+                <img src="https://nhaxinh.com/wp-content/uploads/2021/10/SHOWROOM_007.jpg" alt="" class="discount__bottom--imgOne">
+                <div class="discount__title">
+                    <h2 class="discount__h2">Mẫu thiết kế phòng ngủ</h2>
+                    <p class="discount__p">Những mẫu phòng ngủ của Nhà Xinh mang đến cảm giác ấm cúng, gần gũi và thoải mái</p>
+                    <a href="#" class="discount__flex">
+                        <span class="discount__span">MẪU PHÒNG NGỦ</span>
+                        <i class="fa-solid fa-arrow-right-long discount__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 flex__discount hide__on--tablet__mobile" style="height:500px;">
+            <div class="discount__padding">
+                <img src="https://nhaxinh.com/wp-content/uploads/2021/10/Rectangle4.jpeg" alt="" class="discount__bottom--imgTwo">
+                <div class="discount__title">
+                    <h2 class="discount__h2">Mẫu thiết kế phòng ăn</h2>
+                    <p class="discount__p">Một bữa ăn ngon luôn là mong ước của mỗi gia đình. Không gian phòng ăn đóng vai trò rất quan trọng trong văn hóa Việt</p>
+                    <a href="#" class="discount__flex">
+                        <span class="discount__span">MẪU PHÒNG ĂN</span>
+                        <i class="fa-solid fa-arrow-right-long discount__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end add -->
+
+                <!-- Sản phẩm mới -->
+                <div class="col-1" style="height: 80px;"></div>
+                <div class="col-10" style="height: 80px;">
+                    <div class="product__box">
+                        <span class="product__title-new prd">Sản phẩm mới</span>
+                        <span class="product__titel-all prd">
+                        <a href="#">
+                            Xem tất cả
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a></span>
+                    </div>
+                </div>
+                <div class="col-1" style="height: 80px;"></div>
+
+                <!-- Sản phẩm -->
+                <div class="col-1" style="height:5%;"></div>
+                <div class="col-10" style="height: 5%;">
+                    <div class="col-3 product__tablet" style="height: 335px;">
+                        <div class="product">
+                            <div class="img__container">
+                                <div class="product__img">
+                                    <img class="product__img-link-original" src="https://nhaxinh.com/wp-content/uploads/2023/07/Ghe-an-Coastal-xanh-768x511.jpg" alt="img_1">
+                                    <img class="product__img-link-hover" src="https://nhaxinh.com/wp-content/uploads/2023/07/BST-Coastal-4-768x512.jpg" alt="img_1_hover">
+                                </div>
+                            </div>
+                            <div class="product__title">
+                                <span class="product__title-name">Ghế ăn Coastal KD1085-18</span>
+                                <i class="fa-regular fa-heart product__icon"></i>
+                            </div>
+                            <div class="product__price">
+                                <span class="price">5,100,000₫</span>
+                            </div>
+                            <div class="product__btn">
+                       <div class="product__btn-cart">
+                            <a href="#" class="product__btn-cart_link">
+                                THÊM VÀO GIỎ
+                            </a>
+                        </div>
+                        <div class="product__btn-details">
+                            <a href="#" class="product__btn-details_link">
+                                XEM THÊM
+                            </a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-3 product__tablet" style="height: 335px;">
+                        <div class="product">
+                            <div class="img__container">
+                                <div class="product__img">
+                                    <img class="product__img-link-original" src="https://nhaxinh.com/wp-content/uploads/2023/07/Sofa-Coastal-3-cho-768x511.jpg" alt="img_2">
+                                    <img class="product__img-link-hover" src="https://nhaxinh.com/wp-content/uploads/2023/07/BST-Coastal-3-1-768x512.jpg" alt="img_2_hover">
+                                </div>
+                            </div>
+                            <div class="product__title">
+                                <span class="product__title-name">Sofa Coastal 2 chỗ KD1085-18 xanh M2</span>
+                                <i class="fa-regular fa-heart product__icon"></i>
+                            </div>
+                            <div class="product__price">
+                                <span class="price">32,900,000₫</span>
+                            </div>
+                            <div class="product__btn">
+                       <div class="product__btn-cart">
+                            <a href="#" class="product__btn-cart_link">
+                                THÊM VÀO GIỎ
+                            </a>
+                        </div>
+                        <div class="product__btn-details">
+                            <a href="#" class="product__btn-details_link">
+                                XEM THÊM
+                            </a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-3 product__tablet" style="height: 335px;">
+                        <div class="product">
+                            <div class="img__container">
+                                <div class="product__img">
+                                    <img class="product__img-link-original" src="https://nhaxinh.com/wp-content/uploads/2023/07/Armchair-Coastal-vai-Sevilla-768x511.jpg" alt="img_3">
+                                    <img class="product__img-link-hover" src="https://nhaxinh.com/wp-content/uploads/2023/07/Sofa-Coastal-1-cho-5-768x511.jpg" alt="img_3_hover">
+                                </div>
+                            </div>
+                            <div class="product__title">
+                                <span class="product__title-name">Sofa Coastal 1 chỗ KD1085-18 xanh M2</span>
+                                <i class="fa-regular fa-heart product__icon"></i>
+                            </div>
+                            <div class="product__price">
+                                <span class="price">15,900,000₫</span>
+                            </div>
+                            <div class="product__btn">
+                       <div class="product__btn-cart">
+                            <a href="#" class="product__btn-cart_link">
+                                THÊM VÀO GIỎ
+                            </a>
+                        </div>
+                        <div class="product__btn-details">
+                            <a href="#" class="product__btn-details_link">
+                                XEM THÊM
+                            </a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-3 product__tablet" style="height: 335px;">
+                        <div class="product">
+                            <div class="img__container">
+                                <div class="product__img">
+                                    <img class="product__img-link-original" src="https://nhaxinh.com/wp-content/uploads/2021/10/sofa-jazz-3-cho-hien-dai-da-that-chan-kim-loai-81212-mau-nau-768x511.jpg" alt="img_4">
+                                    <img class="product__img-link-hover" src="https://nhaxinh.com/wp-content/uploads/2021/10/phong-khach-jazz4-768x511.jpg" alt="img_4_hover">
+                                </div>
+                            </div>
+                            <div class="product__title">
+                                <span class="product__title-name">Sofa Jazz 3 chỗ hiện đại da cognac</span>
+                                <i class="fa-regular fa-heart product__icon"></i>
+                            </div>
+                            <div class="product__price">
+                                <span class="price">59,900,000₫</span>
+                            </div>
+                            <div class="product__btn">
+                       <div class="product__btn-cart">
+                            <a href="#" class="product__btn-cart_link">
+                                THÊM VÀO GIỎ
+                            </a>
+                        </div>
+                        <div class="product__btn-details">
+                            <a href="#" class="product__btn-details_link">
+                                XEM THÊM
+                            </a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1" style="height: 5%;"></div>
+                <div class="col-12" style="height: 20px;"> </div>
+            <!-- Hỗ trợ -->
+        <div class="col-12 bg" style="height: 5%;">
+            <div class="col-6 sp__tablet" style="height: 570px;">
+                <div class="bag__sp">
+                <div class="hotline">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    HOTLINE: 38781108
+                </div>
+                    <div class="sp__text">
+                        <div class="sp__text-sp">Bạn cần hỗ trợ?</div>
+                        <div class="sp__text-back">Xin vui lòng để lại yêu cầu hỗ trợ của bạn.</div>
+                    </div>
+                    <div class="sp__input">
+                        <div class="sp__info">
+                            <input type="text" name="HoTen" placeholder="Họ tên" class="sp__info-name sp__info-input">
+                            <input type="text" name="SoDienThoai" placeholder="+(84) 0123 456" class="sp__info-call sp__info-input">
+                        </div>
+                        <input type="email" name="EnterEmail" placeholder="Enter email" class="sp__email">
+                        <textarea name="NoiDungLienHe" id="" cols="30" rows="10" placeholder="Nội dung liên hệ" class="sp__textarea"></textarea>
+                        <button type="submit" class="sp__btn">GỬI YÊU CẦU</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 sp__tablet" style="height: 570px;">
+                <div class="background">
+                    <img src="./assets/img/ghe2.jpg" alt="" class="img__bg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__bag">
+                <div class="col-3 footer__bg" style="height: 200px;">
+                    <h4 class="footer__title">KẾT NỐI VỚI HP FURNITURE</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            HP FURNITURE
+                        </li>
+                        <li class="footer__list-item">
+                            FOLLOW US
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="">Instagram - Youtube - Facebook</a>
+                        </li>
+                    </ul>                   
+                </div>
+    
+                <div class="col-3 footer__bg" style="height: 200px;">
+                    <h4 class="footer__title">HP FURNITURE</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            Giới thiệu
+                        </li>
+                        <li class="footer__list-item">
+                            Tổng công ty
+                        </li>
+                        <li class="footer__list-item">
+                            Tuyển dụng
+                        </li>
+                        <li class="footer__list-item">
+                            Thẻ hội viên
+                        </li>
+                        <li class="footer__list-item">
+                            Đổi trả hàng
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-3 footer__bg" style="height: 200px;">
+                    <h4 class="footer__title">CẢM HỨNG #HP FURNITURE</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            Sản phẩm
+                        </li>
+                        <li class="footer__list-item">
+                            Ý tưởng và cảm hứng
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-3 footer__bg" style="height: 200px;">
+                    <h4 class="footer__title">NEWSLETTER</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            Hãy để lại email của bạn để nhận được những ý tưởng trang trí mới và những thông tin, ưu đãi từ Nhà Xinh
+                        </li>
+                        <li class="footer__list-item">
+                            Email: tunhienbikick.com.vn
+                        </li>
+                        <li class="footer__list-item">
+                            Hotline: 18007200
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1 footer__bg" style="height: 150px;"></div>
+            <div class="col-10 footer__bg" style="height: 150px;">
+                <div class="footer__balo">
+                    <div>© 2021 - Bản quyền của tunhienbikick - thương hiệu thuộc HP Furniture <br>
+                        Từ năm 1999 - thương hiệu đăng ký số 284074 Cục sở hữu trí tuệ</div>
+                    <div><img src="https://nhaxinh.com/wp-content/uploads/2021/09/image-15.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-1 footer__bg" style="height: 150px;"></div>
+        </footer>
+
+
+        <div id="backtop">
+            <i class="fa-solid fa-angle-up backtop__icon"></i>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="validator.js"></script>
+</body>
+</html>
